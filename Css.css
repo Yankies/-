@@ -1,0 +1,188 @@
+clearfix {
+	clear: both;
+}
+
+.table{
+    font-size: 100%;
+}
+
+body{
+    background-image: url(Phon.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+.puk:after{
+	display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+	width: 100%;
+	height: 100%;
+	padding: 1%;
+	background-color: green;
+}
+.puk {
+text-decoration: none;
+color: Black;
+}
+.puk:hover{
+	background-color: White;
+	width: 100%;
+	height: 100%;
+	color: black;
+    display: block;
+    transition-duration: .5s;
+}
+.table{
+	background-color: silver;
+}
+.head{
+	background-color: White;
+}
+.lmenu{
+	text-color: White
+}
+.lmenu:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+.lmenu ul {
+    list-style: none;;
+}
+
+.lmenu li {
+	font-family: Arial;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.lmenu li a {
+    padding: 5%;
+    text-decoration: none;
+    font-size: 100%;
+    display: block;
+    background-color: silver;
+    transition: 1s;
+}
+
+.lmenu li a:hover {
+    background-color: White;
+	color: black;
+    display: block;
+    transform: scale(1.1);
+    transition-duration: .5s;
+}
+
+.lmenu{
+	text-color: White;
+}
+.tmenu:after {
+    display: block;
+    content: ' ';
+    clear: both;
+	width: 100%;
+}
+.tmenu ul {
+    list-style: none;
+	width: 100%;
+}
+
+.tmenu li {
+	font-family: Arial;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+	    float: left;
+		width: 100%;
+}
+
+.tmenu li a {
+    padding: 5%;
+    text-decoration: none;
+    font-size: 100%;
+    display: block;
+    background-color: green;
+    transition: 1s;
+	width: 100%;
+}
+
+.tmenu li a:hover {
+    background-color: White;
+	color: black;
+    display: block;
+    transform: scale(1.1);
+    transition-duration: .5s;
+	width: 100%;
+}
+.color{
+	background-color: green;
+}
+/* Фикс-меню */
+
+.menu:after {
+    display: fixed;
+    clear: both;
+    float: none;
+}
+
+.menu {
+    position: fixed;
+}
+.menu ul{
+    list-style: none;
+}
+.menu li {
+    position: relative;
+	font-family: Arial;
+}
+
+.menu li a {
+    padding: 5%;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+.menu li a:hover {
+    background-color: White;
+	color: black;
+}
+
+/*Суп-мену*/
+
+.submenu {
+    display: none;
+    position: absolute;
+    width: 10%;
+    top: 99%;
+    left: 0;
+    background-color: silver;
+	
+}
+.submenu ul{
+    list-style: none;
+}
+.submenu li {
+    display: block;
+	width: 300%;
+}
+
+.submenu li a {
+    display: block;
+    padding: 5%;
+    color: black;
+    background-color: silver;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    text-decoration: underline;
+	background-color: White;
+}
+
+.menu li:hover .submenu {
+    display: block;
+    transition-property: background-size(1.1) 1s;
+}
